@@ -21,7 +21,7 @@ this function have job to get next and prev array
 ```
 
 ## How Used
-example we have array name key_book and have current key name key_vid:
+example we have array name `$key_book` and have current key name `$key_vid`:
 
 ```php
     $next = get_next($key_book, $key_vid);
