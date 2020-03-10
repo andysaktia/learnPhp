@@ -23,9 +23,11 @@ key book is value key from `$videos`.
 so, first step i made array chapter for `$key_book` and than make group array based on key array `'chapter'`
 
 ```php 
-$book_arr = array(); // array that want to fill videos base $key_book
+// array that want to fill videos base $key_book
+$book_arr = array(); 
 foreach ($key_book as $num) {
-   array_push($book_arr, $videos[$num]); // $videos in array include complete video
+   // $videos in array include complete video
+   array_push($book_arr, $videos[$num]); 
 }
 
 // array grouping based key chapter
