@@ -1,5 +1,5 @@
-## Group array
-make new array with grouping based on category key, use this fuction:
+## Grouping array
+Make new array with grouping based on category key, use this fuction:
 
 ```php
 function group_by($key, $data) {
@@ -17,10 +17,7 @@ function group_by($key, $data) {
 }
 ```
 
-in my case, i want make array assosiative based on chapter video, but not all chapter that i want take only chapter that in `$key_book`. 
-key book is value key from `$videos`.
-
-so, first step i made array chapter for `$key_book` and than make group array based on key array `'chapter'`
+In my case, i want make array assosiative based on chapter video, but not all chapter that i want take only chapter that in `$key_book`. key book is value key from `$videos`. So, first step i made array chapter for `$key_book` and than make group array based on key array `'chapter'`
 
 ```php 
 // array that want to fill videos base $key_book
