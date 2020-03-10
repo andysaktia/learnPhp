@@ -24,7 +24,7 @@ function array_search_inner ($array, $attr, $val, $strict = FALSE) {
 }
 ```
 ### Hoe to use?
-Example, i want to get key in `$video_lumo` array based on value `$id` that have key `'url'`.
+Example, i want to get key in `$videos` array based on value `$id` that have key `'url'`.
 ```php
-$key_vid = array_search_inner($videos_lumo, 'url', $id);
+$key_vid = array_search_inner($videos, 'url', $id);
 ```
