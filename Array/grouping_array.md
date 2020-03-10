@@ -20,7 +20,7 @@ function group_by($key, $data) {
 in my case, i want make array assosiative based on chapter video, but not all chapter that i want take only chapter that in `$key_book`. 
 key book is value key from `$videos`.
 
-so, first step i made array chapter for `$key_book` and than make group array based  key`'chapter'`
+so, first step i made array chapter for `$key_book` and than make group array based on key array `'chapter'`
 
 ```php 
 $book_arr = array(); // array that want to fill videos base $key_book
