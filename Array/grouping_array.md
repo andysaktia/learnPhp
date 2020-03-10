@@ -20,13 +20,17 @@ function group_by($key, $data) {
 in my case, i want make array assosiative based on chapter video, but not all chapter that i want take only chapter that in `$key_book`. 
 key book is value key from `$videos`.
 
-so, first step i made array chapter for `$key_book` and that i add all case with 
+so, first step i made array chapter for `$key_book` and than make group array based  key`'chapter'`
 
 ```php 
-$book_arr = array();
+$book_arr = array(); // array that want to fill videos base $key_book
 foreach ($key_book as $num) {
-   array_push($book_arr, $videos_lumo[$num]);
+   array_push($book_arr, $videos[$num]); // $videos in array include complete video
 }
-$chap_arr = group_by('chapter', $book_arr);
 
+// array grouping based key chapter
+$chap_arr = group_by('chapter', $book_arr); 
+
+//Dump result
+echo "<pre>" . var_export($chap_arr, true) . "</pre>"; 
 ```
