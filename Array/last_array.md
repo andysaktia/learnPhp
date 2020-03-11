@@ -14,8 +14,6 @@ The key is, define last array first with `end($array)` and then foreach array wi
           <a href="<?= $url ;?>"><?= $passage ?></a>
           <?php }else{ ?>
           <a href="<?= $url ;?>"><?= $passage ?></a>,
-        <?php } }?>
-        )</li>
-<?php };?>
+<?php }}};?>
 ```
 
