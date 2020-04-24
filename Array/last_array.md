@@ -17,3 +17,17 @@ The key is, define last array first with `end($array)` and then foreach array wi
 <?php }}};?>
 ```
 
+## Use function
+```php
+if (! function_exists("array_key_last")) {
+    function array_key_last($array) {
+        if (!is_array($array) || empty($array)) {
+            return NULL;
+        }
+        
+        $k_array = array_keys($array);
+        $c_array = count($array)-1;
+        return $k_array[$c_array];
+    }
+}
+```
