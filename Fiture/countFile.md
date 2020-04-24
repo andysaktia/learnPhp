@@ -1,5 +1,5 @@
 ## Count file
-find size memory in minimal three digit numbe with value KB, MB or GB
+find size memory in minimal three digit number with value KB, MB or GB
 
 ```php
    function FileSizeConvert($bytes){
