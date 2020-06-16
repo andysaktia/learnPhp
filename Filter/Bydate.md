@@ -13,3 +13,12 @@ function getDateFormat($data){
        return $t;
 }
 ```
+## Filter in Action
+if date past `<` and vice versa.
+```php
+ if ($t <= $now ){
+     echo('yes');
+ } else {
+     echo('no');
+ }
+```
