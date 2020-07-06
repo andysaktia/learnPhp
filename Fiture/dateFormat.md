@@ -4,6 +4,24 @@ in my case format date, that get from Api;
 
 ### Make script
 ```php
+//*** AMBIL DATA START DAN END DARI API
+
+function getArrayDateApi($data) {
+    $result = array();
+
+    foreach($data as $key => $val) {
+     $date = array();
+     $date['start'] = $val['field_date_start'];
+     $date['end'] = $val['field_date_end'];
+     $result[$key] = $date;
+    }
+
+    return $result;
+}
+
+
+//*** FORMATED DATA TANGGAL DAN WAKTU API
+// DALAM BENTUK BAHASA INDONESIA
 
 class DateTimeFormat
 {
